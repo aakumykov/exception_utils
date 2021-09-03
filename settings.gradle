@@ -1,0 +1,2 @@
+rootProject.name = "exception_utils"
+include ':exception_utils_module'
