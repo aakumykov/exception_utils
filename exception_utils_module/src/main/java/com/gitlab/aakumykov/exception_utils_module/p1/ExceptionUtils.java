@@ -1,4 +1,4 @@
-package com.gitlab.aakumykov.exception_utils_module;
+package com.gitlab.aakumykov.exception_utils_module.p1;
 
 import android.text.TextUtils;
 import android.util.Log;
