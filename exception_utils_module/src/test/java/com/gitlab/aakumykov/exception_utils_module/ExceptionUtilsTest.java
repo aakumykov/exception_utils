@@ -15,9 +15,9 @@ public class ExceptionUtilsTest {
     private Exception mException;
     private Throwable mThrowable;
 
+
     @Before
     public void setUp() throws Exception {
-
         mException = new Exception(ERROR_MSG);
         mThrowable = new Throwable(ERROR_MSG);
     }
@@ -38,10 +38,5 @@ public class ExceptionUtilsTest {
     public void getErrorMessage_fromThrowable() {
         String text = ExceptionUtils.getErrorMessage(mThrowable);
         assertEquals(ERROR_MSG, text);
-    }
-
-    @Test
-    public void printException() {
-        ExceptionUtils.printException(TAG, mException);
     }
 }
