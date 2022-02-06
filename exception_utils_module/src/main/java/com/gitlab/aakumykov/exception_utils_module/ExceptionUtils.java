@@ -4,6 +4,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class ExceptionUtils {
 
@@ -15,7 +16,10 @@ public class ExceptionUtils {
         return getErrorMessage(e);
     }
 
-    public static String getErrorMessage(Throwable throwable) {
+    public static String getErrorMessage(@Nullable Throwable throwable) {
+
+        if (null == throwable)
+            return "null";
 
         String errorMsg = throwable.getMessage();
 
