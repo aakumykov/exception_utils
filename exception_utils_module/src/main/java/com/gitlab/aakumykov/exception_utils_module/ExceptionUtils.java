@@ -28,8 +28,9 @@ public class ExceptionUtils {
                 errorMsg;
     }
 
+    @Deprecated
     public static void printException(@NonNull String tag, @NonNull Exception e) {
-        String errorMsg = ExceptionUtils.getErrorFromException(e);
+        String errorMsg = ExceptionUtils.getErrorMessage(e);
         Log.e(tag, errorMsg, e);
     }
 }
